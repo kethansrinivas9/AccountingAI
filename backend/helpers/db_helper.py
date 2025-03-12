@@ -1,9 +1,8 @@
-from fastapi import Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import text
-from app.models import Document
-from langchain_openai import OpenAIEmbeddings
+from sqlalchemy.orm import Session
 
+from app.models import Document
 
 # OpenAI Embeddings
 embeddings_model = OpenAIEmbeddings()

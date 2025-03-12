@@ -1,13 +1,11 @@
 from fastapi import APIRouter, UploadFile, File, Query, Depends
 from langchain.chains import RetrievalQA
-from langchain.chains.question_answering import load_qa_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.prompts import ChatPromptTemplate
+from langchain.schema import Document
+from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from sqlalchemy.orm import Session
-from langchain_openai import ChatOpenAI
-from langchain.schema import Document
-from langchain.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain.chains.combine_documents import create_stuff_documents_chain
 
 from app.database import get_db
 from backend.helpers.db_helper import extract_and_store_document_embeddings, \

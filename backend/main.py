@@ -1,7 +1,5 @@
 import uvicorn
 from fastapi import FastAPI
-from fastapi import APIRouter
-from langchain_community.vectorstores.oraclevs import log_level
 from starlette.middleware.cors import CORSMiddleware
 
 from routers import document
@@ -27,6 +25,5 @@ def root():
 if __name__ == '__main__':
     uvicorn.run(app=app,
                 host='0.0.0.0',
-                port=8080,
-                log_level='debug'
+                port=8000
                 )
