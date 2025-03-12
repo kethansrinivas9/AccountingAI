@@ -52,19 +52,23 @@ async def query_document(question: str = Query(...), db: Session = Depends(get_d
 
     #s3_docs = [Document(page_content=text) for text in docs_text]
 
-    # # Load OpenAI model and generate answer
+    # Load OpenAI model and generate answer
+    # Using old model to save costs in querying
     llm = ChatOpenAI(model_name="gpt-3.5-turbo")
 
     #creating a prompt for LLM to understand
     prompt = ChatPromptTemplate.from_template("""
-    You are a helpful AI assistant. Use the following pieces of context to answer the question at the end.
-    If you don't know the answer, just say you don't know. Don't try to make up an answer.
- 
+    You are an accounting assistant that ONLY answers questions related to accounting based on the following context.
+    If a query is not related to accounting, politely decline to answer even if the information exists in the context.
+    Explain that you are specialized for accounting queries only and cannot assist with other topics.
+
+    Accounting topics include: financial statements, bookkeeping, calculations, tax preparation, audit procedures, financial regulations, accounting principles (GAAP, IFRS), etc.
+    Do not answer questions about non-accounting topics such as marketing, general business strategy, HR, or IT, even if this information appears in the context.
 
     Context: {context}
 
     Question: {question}
-    
+
     Helpful answer:
     """)
 
