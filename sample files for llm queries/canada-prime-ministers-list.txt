@@ -1,0 +1,23 @@
+# Canadian Prime Ministers (Last 100 Years)
+
+| Prime Minister | Political Party | Period in Office |
+|----------------|-----------------|------------------|
+| Arthur Meighen | Conservative | July 10, 1920 – December 29, 1921 |
+| William Lyon Mackenzie King | Liberal | December 29, 1921 – June 28, 1926 |
+| Arthur Meighen | Conservative | June 29, 1926 – September 25, 1926 |
+| William Lyon Mackenzie King | Liberal | September 25, 1926 – August 7, 1930 |
+| Richard Bedford Bennett | Conservative | August 7, 1930 – October 23, 1935 |
+| William Lyon Mackenzie King | Liberal | October 23, 1935 – November 15, 1948 |
+| Louis St. Laurent | Liberal | November 15, 1948 – June 21, 1957 |
+| John Diefenbaker | Progressive Conservative | June 21, 1957 – April 22, 1963 |
+| Lester B. Pearson | Liberal | April 22, 1963 – April 20, 1968 |
+| Pierre Elliott Trudeau | Liberal | April 20, 1968 – June 4, 1979 |
+| Joe Clark | Progressive Conservative | June 4, 1979 – March 3, 1980 |
+| Pierre Elliott Trudeau | Liberal | March 3, 1980 – June 30, 1984 |
+| John Turner | Liberal | June 30, 1984 – September 17, 1984 |
+| Brian Mulroney | Progressive Conservative | September 17, 1984 – June 25, 1993 |
+| Kim Campbell | Progressive Conservative | June 25, 1993 – November 4, 1993 |
+| Jean Chrétien | Liberal | November 4, 1993 – December 12, 2003 |
+| Paul Martin | Liberal | December 12, 2003 – February 6, 2006 |
+| Stephen Harper | Conservative | February 6, 2006 – November 4, 2015 |
+| Justin Trudeau | Liberal | November 4, 2015 – Present |

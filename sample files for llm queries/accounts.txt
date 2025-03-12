@@ -1,0 +1,39 @@
+Revenue: 500000
+Cost of Goods Sold (COGS): 300000
+Gross Profit: 200000
+
+Operating Expenses: 50000
+Operating Income: 150000
+
+Interest Expense: 10000
+Tax Expense: 20000
+Net Income: 120000
+
+Total Assets: 800000
+Total Liabilities: 300000
+Total Equity: 500000
+
+Current Assets: 250000
+Current Liabilities: 150000
+Current Ratio: 1.67
+
+Accounts Receivable: 60000
+Accounts Payable: 40000
+
+Depreciation Expense: 15000
+Amortization Expense: 5000
+
+Cash Flow from Operations: 100000
+Cash Flow from Investing: -20000
+Cash Flow from Financing: 30000
+Net Cash Flow: 110000
+
+Return on Assets (ROA): 15%
+Return on Equity (ROE): 24%
+Debt-to-Equity Ratio: 0.6
+
+Break-even Point: 250000
+Margin of Safety: 100000
+
+Inventory Turnover: 5.2
+Days Sales Outstanding (DSO): 40
