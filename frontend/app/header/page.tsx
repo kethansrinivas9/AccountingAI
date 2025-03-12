@@ -1,14 +1,9 @@
 "use client";
-import { useRouter } from "next/navigation"; // ✅ Use Next.js router
-import Cookies from "js-cookie";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 
 
 const Header: React.FC = () => {
-  const router = useRouter(); // ✅ Use Next.js router
-
-
     return (
 
       <nav className="bg-black border-gray-200 dark:bg-gray-900">

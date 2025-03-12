@@ -50,6 +50,7 @@ const HomePage = () => {
       const data = await response.json();
       typeWriterEffect(data.response);
     } catch (error) {
+      console.log(error);
       typeWriterEffect("Error: Unable to fetch response.");
     }
   };

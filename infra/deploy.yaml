@@ -1,0 +1,100 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Deploy Next.js (React) & FastAPI on EC2 Free Tier using CloudFormation"
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      KeyName: ec2_rsa_key
+      ImageId: ami-04b4f1a9cf54c11d0
+      SecurityGroups:
+        - Ref: MySecurityGroup
+      Tags:
+        - Key: Name
+          Value: React-FastAPI-EC2
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          sudo apt-get install ec2-instance-connect
+          sudo apt update && sudo apt upgrade -y
+
+          # Install Python, Pip & Uvicorn
+          sudo apt install -y python3 python3-pip
+          # pip install fastapi uvicorn - remove this later
+
+          # Install Node.js & PM2
+          sudo curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+          sudo apt install -y nodejs
+          sudo apt install -y python3.12-venv
+          sudo npm install -g pm2 serve
+
+          # Clone repository
+          sudo git clone https://github.com/kethansrinivas9/AccountingAI.git /home/ubuntu/AccountingAI
+
+          # Clone and activate virtual environment and install deps
+          cd /home/ubuntu/AccountingAI/backend
+          sudo python3 -m venv myenv
+          sudo source myenv/bin/activate
+          sudo pip install -r requirements.txt
+
+          # start backend server
+          cd /home/ubuntu/AccountingAI/backend
+          # This python path is required for importing files from package hierarchy
+          export PYTHONPATH=$(pwd)
+
+          # Run from main directory
+          cd /home/ubuntu/AccountingAI/
+          pm2 start "uvicorn main:app --host 0.0.0.0 --port 8000" --name fastapi-app
+
+          # Change directory to frontend
+          cd /home/ubuntu/AccountingAI/frontend
+          npm install
+          npm run build
+          pm2 start "serve -s out -l 3000" --name react-app
+
+          # Install & Configure Nginx
+          sudo apt install -y nginx
+          echo 'server {
+            listen 80;
+            
+            location / {
+                proxy_pass http://localhost:3000;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            }
+            
+            location /documents/ {
+                proxy_pass http://localhost:8000/;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            }
+          }' | sudo tee /etc/nginx/sites-available/default
+
+          sudo systemctl restart nginx
+          pm2 startup
+          pm2 save
+
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "Allow SSH, HTTP, and API Access"
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 18.206.107.0/24 # Allow SSH
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0 # Allow HTTP
+        - IpProtocol: tcp
+          FromPort: 3000
+          ToPort: 3000
+          CidrIp: 0.0.0.0/0 # Allow Next.js
+        - IpProtocol: tcp
+          FromPort: 8000
+          ToPort: 8000
+          CidrIp: 0.0.0.0/0 # Allow FastAPI

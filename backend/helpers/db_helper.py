@@ -1,8 +1,8 @@
-from sqlalchemy.orm import Session
+from langchain_openai import OpenAIEmbeddings
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
-from app.models import Document
+from backend.app.models import Document
 
 # OpenAI Embeddings
 embeddings_model = OpenAIEmbeddings()

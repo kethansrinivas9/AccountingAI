@@ -7,7 +7,7 @@ from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from sqlalchemy.orm import Session
 
-from app.database import get_db
+from backend.app.database import get_db
 from backend.helpers.db_helper import extract_and_store_document_embeddings, \
     extract_closest_documents_based_on_embeddings
 from backend.helpers.s3_helper import upload_file_to_s3, get_s3_content_from_uri

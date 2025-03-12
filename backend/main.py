@@ -19,7 +19,7 @@ app.include_router(document.router)
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to AI DocFlow"}
+    return {"message": "Welcome to AccountingAI"}
 
 
 if __name__ == '__main__':
