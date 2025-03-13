@@ -4,6 +4,9 @@ import { useState } from "react";
 import Header from '../../header/page';
 
 export default function UploadPage() {
+  const API_BASE_URL = process.env.PUBLIC_URL;
+  console.log(API_BASE_URL);
+  
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
   const [statusMessage, setStatusMessage] = useState<{ text: string; type: "success" | "error" } | null>(null);
@@ -27,7 +30,7 @@ export default function UploadPage() {
     formData.append("file", selectedFile);
 
     try {
-      const response = await fetch('http://localhost:8080/api/documents/upload', {
+      const response = await fetch(`${API_BASE_URL}/api/documents/upload`, {
         method: "POST",
         body: formData,
       });

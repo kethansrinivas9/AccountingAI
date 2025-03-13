@@ -4,6 +4,10 @@ import Header from '../header/page';
 import { Send } from "lucide-react";
 
 const HomePage = () => {
+  
+  const API_BASE_URL = process.env.PUBLIC_URL;
+  console.log(API_BASE_URL);
+
   // Load messages from localStorage on initial render
   const [messages, setMessages] = useState<{ text: string; isUser: boolean }[]>(() => {
     // Check if we're in a browser environment (needed for Next.js)
@@ -43,7 +47,7 @@ const HomePage = () => {
     setIsFetching(true);
 
     try {
-      const response = await fetch(`http://localhost:8080/api/documents/query/?question=${encodeURIComponent(input)}`, {
+      const response = await fetch(`${API_BASE_URL}/api/documents/query/?question=${encodeURIComponent(input)}`, {
         method: "GET",
       });
 
