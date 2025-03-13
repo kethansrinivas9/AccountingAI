@@ -5,7 +5,7 @@ import { Send } from "lucide-react";
 
 const HomePage = () => {
   
-  const API_BASE_URL = process.env.PUBLIC_URL;
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
   console.log(API_BASE_URL);
 
   // Load messages from localStorage on initial render
