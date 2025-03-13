@@ -43,7 +43,7 @@ const HomePage = () => {
     setIsFetching(true);
 
     try {
-      const response = await fetch(`http://localhost:8080/documents/query/?question=${encodeURIComponent(input)}`, {
+      const response = await fetch(`http://localhost:8080/api/documents/query/?question=${encodeURIComponent(input)}`, {
         method: "GET",
       });
 

@@ -15,7 +15,7 @@ from backend.helpers.s3_helper import upload_file_to_s3, get_s3_content_from_uri
 # OpenAI Embeddings
 embeddings_model = OpenAIEmbeddings()
 
-router = APIRouter(prefix="/documents", tags=["Documents"])
+router = APIRouter(prefix="/api/documents", tags=["Documents"])
 
 
 
