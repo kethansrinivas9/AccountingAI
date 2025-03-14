@@ -1,0 +1,55 @@
+HELLO WORLD, INC.
+BALANCE SHEET
+As of December 31, 2024
+ASSETS
+Current Assets
+
+Cash and Cash Equivalents              $125,000
+Short-term Investments                  $50,000
+Accounts Receivable                     $87,500
+Inventory                               $93,000
+Prepaid Expenses                        $12,300
+Other Current Assets                     $8,200
+Total Current Assets                $376,000
+
+Non-Current Assets
+
+Property, Plant and Equipment          $520,000
+Less: Accumulated Depreciation        ($175,000)
+Intangible Assets                      $125,000
+Long-term Investments                   $85,000
+Deferred Tax Assets                     $15,000
+Other Non-Current Assets                $18,000
+Total Non-Current Assets            $588,000
+
+TOTAL ASSETS                        $964,000
+LIABILITIES AND SHAREHOLDERS' EQUITY
+Current Liabilities
+
+Accounts Payable                        $65,000
+Short-term Debt                         $45,000
+Current Portion of Long-term Debt       $25,000
+Accrued Expenses                        $18,500
+Income Taxes Payable                    $12,300
+Other Current Liabilities                $9,200
+Total Current Liabilities           $175,000
+
+Non-Current Liabilities
+
+Long-term Debt                         $250,000
+Deferred Tax Liabilities                $32,000
+Pension Obligations                     $45,000
+Other Non-Current Liabilities           $18,000
+Total Non-Current Liabilities       $345,000
+
+TOTAL LIABILITIES                   $520,000
+Shareholders' Equity
+
+Common Stock                           $150,000
+Additional Paid-in Capital             $120,000
+Retained Earnings                      $189,000
+Treasury Stock                         ($25,000)
+Accumulated Other Comprehensive Income   $10,000
+Total Shareholders' Equity          $444,000
+
+TOTAL LIABILITIES AND SHAREHOLDERS' EQUITY  $964,000

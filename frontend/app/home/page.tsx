@@ -4,9 +4,8 @@ import Header from '../header/page';
 import { Send } from "lucide-react";
 
 const HomePage = () => {
-  
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
-  console.log(API_BASE_URL);
+  //const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+  const API_BASE_URL = 'http://98.83.140.0';
 
   // Load messages from localStorage on initial render
   const [messages, setMessages] = useState<{ text: string; isUser: boolean }[]>(() => {

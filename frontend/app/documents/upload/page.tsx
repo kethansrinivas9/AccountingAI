@@ -4,9 +4,9 @@ import { useState } from "react";
 import Header from '../../header/page';
 
 export default function UploadPage() {
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
-  console.log(API_BASE_URL);
-  
+  //const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+  const API_BASE_URL = 'http://98.83.140.0';
+
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
   const [statusMessage, setStatusMessage] = useState<{ text: string; type: "success" | "error" } | null>(null);
