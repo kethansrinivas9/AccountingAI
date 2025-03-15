@@ -1,0 +1,47 @@
+Company Name: XYZ Corporation
+Balance Sheet
+As of December 31, 2024
+
+------------------------------------------------------------
+                         ASSETS
+------------------------------------------------------------
+Current Assets:
+  - Cash: $50,000
+  - Accounts Receivable: $30,000
+  - Inventory: $25,000
+  - Prepaid Expenses: $5,000
+  ---------------------------------
+  Total Current Assets: $110,000
+
+Fixed Assets:
+  - Property, Plant, and Equipment: $200,000
+  - Less: Accumulated Depreciation: ($50,000)
+  ---------------------------------
+  Net Fixed Assets: $150,000
+
+Total Assets: $260,000
+
+------------------------------------------------------------
+                         LIABILITIES & EQUITY
+------------------------------------------------------------
+Liabilities:
+  Current Liabilities:
+    - Accounts Payable: $20,000
+    - Short-term Loans: $10,000
+    - Accrued Expenses: $5,000
+    ---------------------------------
+    Total Current Liabilities: $35,000
+  
+  Long-term Liabilities:
+    - Long-term Loan Payable: $75,000
+    ---------------------------------
+    Total Liabilities: $110,000
+
+Equity:
+  - Common Stock: $50,000
+  - Retained Earnings: $100,000
+  ---------------------------------
+  Total Equity: $150,000
+
+Total Liabilities & Equity: $260,000
+

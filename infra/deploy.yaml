@@ -106,16 +106,16 @@ Resources:
             pm2 start \"/home/ubuntu/AccountingAI/backend/myenv/bin/uvicorn main:app --host 0.0.0.0 --port 8000\" --name fastapi-app-2 && \
             cd /home/ubuntu/AccountingAI/frontend && \
             pm2 start \"serve out -l 3000\" --name react-app && \
-            pm2 startup && \
+            sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu && \
             pm2 save"
             
           echo "Setup complete!"
 
   MyEIPAssociation:
-  Type: AWS::EC2::EIPAssociation
-  Properties:
-    AllocationId: eipalloc-069eb618a361393a5 # Your existing Elastic IP allocation ID or the public IP
-    InstanceId: !Ref MyEC2Instance
+    Type: AWS::EC2::EIPAssociation
+    Properties:
+      AllocationId: eipalloc-069eb618a361393a5 # Your existing Elastic IP allocation ID or the public IP
+      InstanceId: !Ref MyEC2Instance
 
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup

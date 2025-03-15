@@ -6,7 +6,7 @@ import React from 'react';
 const Header: React.FC = () => {
     return (
 
-      <nav className="bg-black border-gray-200 dark:bg-gray-900">
+      <nav className="bg-[#6A0DAD] border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
     
           {/* Left-aligned Blogger title */}
