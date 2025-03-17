@@ -93,7 +93,7 @@ const HomePage = () => {
             <div className="h-full flex items-center justify-center">
               <div className="text-center text-slate-500">
                 <h1 className="text-2xl font-medium mb-2">How can I help you today?</h1>
-                <p className="text-sm">Ask me anything, or upload a document for assistance.</p>
+                <p className="text-sm">Ask me anything on the uploaded files, or upload a new document for assistance.</p>
               </div>
             </div>
           ) : (

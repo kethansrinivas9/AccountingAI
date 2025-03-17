@@ -54,7 +54,17 @@ export default function UploadPage() {
     <Header/>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-md">
-        <h1 className="text-xl font-bold text-gray-800 mb-4">Upload a File</h1>
+        <h1 className="text-xl font-bold text-gray-800 mb-4">
+          Upload a Text File 
+          <span className="text-sm "> (or select from the
+              <a href="https://github.com/kethansrinivas9/AccountingAI/tree/main/test-files"
+                target="_blank" 
+                className="ml-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">
+               existing files
+            </a>
+          )</span>
+        </h1>
+
 
         <label className="flex flex-col items-center justify-center border-2 border-dashed border-gray-400 rounded-lg p-6 cursor-pointer hover:bg-gray-50 transition">
           <svg className="w-10 h-10 text-gray-500 mb-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

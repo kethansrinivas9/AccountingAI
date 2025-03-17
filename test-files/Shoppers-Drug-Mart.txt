@@ -1,0 +1,34 @@
+======================================
+             SHOPPERS DRUG MART
+                Bill of Sale
+======================================
+Store Location: Shoppers Drug Mart
+Address: 123 Main St, Toronto, ON M5H 2N2
+Phone: (416) 123-4567
+Date: March 16, 2025
+Time: 2:30 PM
+Cashier: Sarah Williams
+======================================
+Item Name                     |  Price  |  Qty  |  Total
+-----------------------------------------------------------
+Item 1: Aspirin 500mg         |  $5.99  |   2  |  $11.98
+Item 2: Shampoo 400ml         |  $7.49  |   1  |  $7.49
+Item 3: Toothpaste 100g       |  $3.89  |   1  |  $3.89
+Item 4: Band-Aids (30ct)      |  $4.49  |   1  |  $4.49
+Item 5: Vitamin C 500mg       |  $8.99  |   1  |  $8.99
+Item 6: Hand Sanitizer 250ml  |  $4.99  |   2  |  $9.98
+Item 7: Lip Balm              |  $2.49  |   3  |  $7.47
+Item 8: Deodorant 150g        |  $5.79  |   1  |  $5.79
+-----------------------------------------------------------
+Subtotal:                                  $59.09
+Tax (13%):                                 $7.68
+-----------------------------------------------------------
+Total:                                    $66.77
+======================================
+Payment Method: Credit Card
+Card Number: **** **** **** 1234
+Authorization: 87654321
+======================================
+Thank you for shopping at Shoppers Drug Mart!
+       Visit us again soon!
+======================================
