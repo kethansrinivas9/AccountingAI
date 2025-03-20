@@ -25,6 +25,9 @@ AccountingAI is a Generative AI platform using OpenAI and LangChain APIs to answ
 - **NGINX**: Web server used as a reverse proxy
 - **PM2**: Process manager for applications to create startup scripts for Systemd automatically
 
+## Sequence diagram
+![PlantUML Diagram](//www.plantuml.com/plantuml/png/TLB1Kjj03BtlLxowCorCeSoqjnmw952OJ0C5tBGNBeijuYtshhkIAVdxQYTnnade8REEfFUazwHJ5XkbQshpHYfg28sDR6mX8MBE5Cr3U47szUmJfbvBVK4uk8Z12_aI7p2nnPD-7MPuMxj59GzrHmO0McLrXMkj5sHtf8JuaPzSqujy_CttlgV8O1dzdttWXMKPtqpxDgcw_pRwWmvdp1RYce8_dzpxWvpYCyMQc74JM1QHyjkPJdnp-PEIkiD4XlF9Ddnc_UAiiivds_7lBVdnz6JifOgXTGLqgaI0sUngktByAqV-ETiFVhlAyGvvVfKPizQ0uo-xkH7kIAAZPyAg9vve2UjB7HL5f9AyE5ipc8ekKhr4y73UfI2AuBsASy4RavQd_1jpHvZg6zCY_ZgfC9-QFgLblQiZv2cGF8_qfoCM7Dns59SumRojWoqF1yCF_HhXahpo2u6Q1ofBvnUCnn0X5K6fb8CbQdH0eA96MF6NeUWQ5SUhyTWrhhPnoDMnFgfH7-hpJfP6ZHaAKF-ww26XFMwi55K2RSZVwsumlvlnxWeqhX8kI05uT3KbBqKHmxfDYxD8IUT6_8OVN5JKM2JPPDTKGmezbxN5oPNQiI0yxiAFL2h5bMT7IBjlOsXQCOf-JQfc2sAc4f6u3Pu7BOS7e7q79ViNijxmQkZ_7qTAGq8wajTTp2L4sfD-FXbcq5gfaBGjrcTJ3dPjJXNKDVK_)
+
 ## Project Setup and Local Deployment
 
 ### Prerequisites
